@@ -31,6 +31,12 @@
       --divider: rgba(230, 0, 126, 0.1);
     }
 
+    html, body {
+      height: 100vh;
+      height: 100dvh;
+      overflow: hidden;
+    }
+
     html {
       font-size: 16px;
       -webkit-font-smoothing: antialiased;
@@ -41,14 +47,12 @@
       font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
       background-color: var(--bg);
       color: var(--text-primary);
-      line-height: 1.6;
-      min-height: 100vh;
+      line-height: 1.5;
       display: flex;
       align-items: center;
       justify-content: center;
-      padding: 40px 20px;
+      padding: 20px;
       position: relative;
-      overflow-x: hidden;
     }
 
     /* Background ambient glow */
@@ -84,10 +88,11 @@
       z-index: 1;
       width: 100%;
       max-width: 580px;
+      max-height: 100%;
       background: var(--card-bg);
       border: 1px solid var(--card-border);
       border-radius: 20px;
-      padding: 56px 48px;
+      padding: 32px 40px;
       box-shadow:
         0 0 0 1px var(--card-border-subtle),
         0 4px 24px rgba(0, 0, 0, 0.4),
@@ -100,8 +105,8 @@
       content: '';
       position: absolute;
       top: 0;
-      left: 48px;
-      right: 48px;
+      left: 40px;
+      right: 40px;
       height: 1px;
       background: linear-gradient(90deg, transparent, var(--accent) 30%, var(--accent) 70%, transparent);
       opacity: 0.5;
@@ -136,14 +141,14 @@
     /* HEADER */
     .header {
       text-align: center;
-      margin-bottom: 40px;
+      margin-bottom: 20px;
     }
 
     .logo {
       display: inline-block;
-      width: 130px;
+      width: 110px;
       height: auto;
-      margin-bottom: 24px;
+      margin-bottom: 16px;
     }
 
     .label {
@@ -154,17 +159,17 @@
       text-transform: uppercase;
       color: var(--accent);
       background: var(--accent-soft);
-      padding: 6px 16px;
+      padding: 5px 14px;
       border-radius: 100px;
-      margin-bottom: 24px;
+      margin-bottom: 14px;
     }
 
     .title {
-      font-size: 28px;
+      font-size: 24px;
       font-weight: 600;
       letter-spacing: -0.02em;
       color: var(--text-primary);
-      line-height: 1.25;
+      line-height: 1.2;
     }
 
     /* DIVIDER */
@@ -177,35 +182,35 @@
     /* CONTEXT */
     .context {
       text-align: center;
-      padding: 32px 0;
+      padding: 16px 0;
     }
 
     .context p {
-      font-size: 14.5px;
+      font-size: 13.5px;
       font-weight: 300;
       color: var(--text-secondary);
-      line-height: 1.75;
+      line-height: 1.6;
       max-width: 440px;
       margin: 0 auto;
     }
 
     /* EVENT DETAILS */
     .details {
-      padding: 32px 0;
+      padding: 16px 0;
       text-align: center;
     }
 
     .details-grid {
       display: grid;
       grid-template-columns: 1fr 1fr;
-      gap: 28px;
+      gap: 12px;
     }
 
     .detail-item {
       background: rgba(255, 255, 255, 0.02);
       border: 1px solid var(--card-border-subtle);
-      border-radius: 12px;
-      padding: 20px;
+      border-radius: 10px;
+      padding: 14px;
       text-align: center;
       transition: all 0.3s cubic-bezier(0.22, 1, 0.36, 1);
     }
@@ -222,19 +227,19 @@
     }
 
     .detail-icon {
-      width: 36px;
-      height: 36px;
+      width: 30px;
+      height: 30px;
       background: var(--accent-soft);
-      border-radius: 10px;
+      border-radius: 8px;
       display: flex;
       align-items: center;
       justify-content: center;
-      margin: 0 auto 14px;
+      margin: 0 auto 8px;
     }
 
     .detail-icon svg {
-      width: 16px;
-      height: 16px;
+      width: 14px;
+      height: 14px;
       stroke: var(--accent);
       fill: none;
       stroke-width: 1.8;
@@ -243,62 +248,41 @@
     }
 
     .detail-label {
-      font-size: 10px;
+      font-size: 9px;
       font-weight: 500;
       letter-spacing: 0.15em;
       text-transform: uppercase;
       color: var(--text-dim);
-      margin-bottom: 6px;
+      margin-bottom: 4px;
       text-align: center;
     }
 
     .detail-value {
-      font-size: 15px;
+      font-size: 13.5px;
       font-weight: 400;
       color: var(--text-primary);
-      line-height: 1.5;
+      line-height: 1.4;
       text-align: center;
     }
 
     .detail-value .sub {
       display: block;
       color: var(--text-secondary);
-      font-size: 13px;
+      font-size: 12px;
       margin-top: 2px;
-    }
-
-    /* MAP */
-    .map-container {
-      margin: 28px auto 0;
-      border-radius: 12px;
-      overflow: hidden;
-      height: 160px;
-      border: 1px solid var(--card-border-subtle);
-      transition: border-color 0.3s ease;
-    }
-
-    .map-container:hover {
-      border-color: var(--card-border);
-    }
-
-    .map-container iframe {
-      width: 100%;
-      height: 100%;
-      border: 0;
-      filter: grayscale(1) brightness(0.45) contrast(1.2);
     }
 
     /* CONFIRMATION */
     .confirmation {
       text-align: center;
-      padding: 36px 0 8px;
+      padding: 20px 0 0;
     }
 
     .confirmation p {
-      font-size: 14px;
+      font-size: 13px;
       font-weight: 400;
       color: var(--text-secondary);
-      margin-bottom: 24px;
+      margin-bottom: 14px;
     }
 
     .btn {
@@ -309,10 +293,10 @@
       background: linear-gradient(135deg, var(--accent) 0%, #c2006a 100%);
       color: #fff;
       font-family: inherit;
-      font-size: 14px;
+      font-size: 13px;
       font-weight: 600;
       letter-spacing: 0.04em;
-      padding: 16px 40px;
+      padding: 13px 36px;
       border: none;
       border-radius: 12px;
       cursor: pointer;
@@ -357,90 +341,21 @@
 
     .confirmation .note {
       display: block;
-      font-size: 12px;
+      font-size: 11px;
       font-weight: 400;
       color: var(--text-dim);
-      margin-top: 16px;
-    }
-
-    /* FOOTER */
-    .footer {
-      text-align: center;
-      padding-top: 32px;
-    }
-
-    .footer-logo {
-      width: 64px;
-      opacity: 0.2;
+      margin-top: 10px;
     }
 
     /* ========= RESPONSIVE ========= */
     @media (max-width: 640px) {
       body {
-        padding: 24px 16px;
-        align-items: flex-start;
+        padding: 12px;
       }
 
       .card {
-        padding: 40px 28px;
+        padding: 24px 20px;
         border-radius: 16px;
-      }
-
-      .card::before {
-        left: 28px;
-        right: 28px;
-      }
-
-      .logo {
-        width: 110px;
-        margin-bottom: 20px;
-      }
-
-      .title {
-        font-size: 24px;
-      }
-
-      .header {
-        margin-bottom: 32px;
-      }
-
-      .context {
-        padding: 24px 0;
-      }
-
-      .context p {
-        font-size: 13.5px;
-      }
-
-      .details {
-        padding: 24px 0;
-      }
-
-      .details-grid {
-        grid-template-columns: 1fr;
-        gap: 16px;
-      }
-
-      .detail-item {
-        padding: 16px;
-      }
-
-      .map-container {
-        height: 140px;
-      }
-
-      .confirmation {
-        padding: 28px 0 8px;
-      }
-
-      .btn {
-        padding: 15px 32px;
-      }
-    }
-
-    @media (max-width: 380px) {
-      .card {
-        padding: 32px 20px;
       }
 
       .card::before {
@@ -448,20 +363,111 @@
         right: 20px;
       }
 
-      .title {
-        font-size: 22px;
+      .logo {
+        width: 90px;
+        margin-bottom: 12px;
       }
 
       .label {
+        margin-bottom: 10px;
         font-size: 9px;
-        padding: 5px 14px;
+        padding: 4px 12px;
+      }
+
+      .title {
+        font-size: 20px;
+      }
+
+      .header {
+        margin-bottom: 14px;
+      }
+
+      .context {
+        padding: 12px 0;
+      }
+
+      .context p {
+        font-size: 12.5px;
+      }
+
+      .details {
+        padding: 12px 0;
+      }
+
+      .details-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 8px;
+      }
+
+      .detail-item {
+        padding: 10px;
+      }
+
+      .detail-icon {
+        width: 26px;
+        height: 26px;
+        margin-bottom: 6px;
+      }
+
+      .detail-icon svg {
+        width: 12px;
+        height: 12px;
+      }
+
+      .detail-label {
+        font-size: 8px;
+        margin-bottom: 2px;
+      }
+
+      .detail-value {
+        font-size: 12px;
+      }
+
+      .detail-value .sub {
+        font-size: 11px;
+      }
+
+      .confirmation {
+        padding: 14px 0 0;
+      }
+
+      .confirmation p {
+        font-size: 12px;
+        margin-bottom: 10px;
+      }
+
+      .btn {
+        padding: 12px 28px;
+        font-size: 12px;
+      }
+
+      .confirmation .note {
+        font-size: 10px;
+        margin-top: 8px;
       }
     }
 
-    @media (min-width: 641px) and (max-width: 768px) {
+    @media (max-width: 380px) {
       .card {
-        max-width: 520px;
-        padding: 48px 40px;
+        padding: 20px 16px;
+      }
+
+      .card::before {
+        left: 16px;
+        right: 16px;
+      }
+
+      .title {
+        font-size: 18px;
+      }
+
+      .logo {
+        width: 80px;
+        margin-bottom: 10px;
+      }
+
+      .header {
+        margin-bottom: 10px;
       }
     }
   </style>
@@ -533,15 +539,6 @@
 
       </div>
 
-      <div class="map-container">
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3381.5!2d34.80559!3d32.10275!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x151d4ca5410fbb25%3A0xea6289f2e2ee0f86!2sExpo%20Tel%20Aviv!5e0!3m2!1sen!2sil!4v1700000000000"
-          allowfullscreen=""
-          loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"
-          title="Expo Tel Aviv location map">
-        </iframe>
-      </div>
     </section>
 
     <!-- DIVIDER -->
@@ -553,21 +550,6 @@
       <a href="#confirm" class="btn" role="button">Confirm Attendance</a>
       <span class="note">Confirmation details will be shared privately.</span>
     </section>
-
-    <!-- FOOTER -->
-    <footer class="footer fade-in">
-      <svg class="footer-logo" viewBox="0 10 507 108" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-        <g fill="#ffffff" stroke="#ffffff" stroke-width="4" stroke-miterlimit="10">
-          <path d="M65.6,44.8c-2.7-4.6-6.3-8.2-10.9-10.9-4.6-2.6-9.8-4-15.5-4s-11,1.4-15.7,4c-4.6,2.7-8.3,6.4-11,11-2.7,4.6-4,9.9-4,15.8s1.3,11,3.9,15.6c2.6,4.6,6.2,8.3,10.7,11,4.5,2.7,9.6,4,15.2,4s9.4-1.1,13.4-3.2c3.1-1.6,5.8-3.7,8-6.2v28.8c0,1.5.5,2.8,1.5,3.7,1,.9,2.2,1.4,3.6,1.4s2.7-.5,3.6-1.4c1-.9,1.5-2.2,1.5-3.7v-50.5c-.2-5.7-1.6-10.9-4.2-15.5ZM59.9,60.7c0,4-.9,7.7-2.7,11-1.8,3.2-4.3,5.8-7.4,7.6-3.1,1.8-6.7,2.8-10.6,2.8s-7.4-.9-10.6-2.8c-3.1-1.8-5.6-4.4-7.5-7.6-1.8-3.2-2.8-6.9-2.8-10.9s.9-7.8,2.8-11c1.8-3.2,4.4-5.8,7.5-7.6,3.1-1.9,6.7-2.8,10.6-2.8s7.5.9,10.6,2.8c3.1,1.9,5.6,4.4,7.4,7.6,1.8,3.2,2.7,6.9,2.7,11Z"/>
-          <path d="M135.3,30.5c-1.5,0-2.7.5-3.6,1.4-1,1-1.4,2.1-1.4,3.5v27.8c0,4.2-.8,7.8-2.4,10.5-1.6,2.7-3.8,4.7-6.5,6.1-2.5,1.2-5.4,1.9-8.6,2-3.1-.1-6.1-.7-8.6-2-2.7-1.3-4.9-3.4-6.5-6.1-1.6-2.7-2.4-6.2-2.4-10.5v-27.8c0-1.4-.5-2.6-1.4-3.5-1-1-2.2-1.4-3.6-1.4s-2.6.5-3.5,1.4c-1,1-1.4,2.1-1.4,3.5v27.8c0,6,1.2,11.1,3.6,15.3,2.4,4.2,5.7,7.4,9.8,9.6,4.1,2.2,8.8,3.3,14,3.3s0,0,0,0,0,0,0,0c5.2,0,9.9-1.1,14-3.3,4.1-2.2,7.4-5.4,9.8-9.6,2.4-4.2,3.6-9.3,3.6-15.3v-27.8c0-1.4-.5-2.6-1.4-3.5-1-1-2.1-1.4-3.5-1.4Z"/>
-          <path d="M209.2,44.9c-2.7-4.6-6.3-8.3-10.9-11-4.6-2.7-9.8-4-15.6-4s-11,1.4-15.7,4c-4.6,2.7-8.3,6.4-11,11-2.7,4.6-4,9.9-4,15.8s1.3,11,3.9,15.6c2.6,4.6,6.2,8.3,10.7,11,4.5,2.7,9.6,4,15.2,4s10.2-1.3,14.4-3.7c2.6-1.5,5-3.4,6.9-5.7v3.9c0,1.5.5,2.7,1.5,3.6.9.9,2.2,1.4,3.6,1.4s2.7-.5,3.6-1.4c1-.9,1.5-2.1,1.5-3.6v-25.9h0c-.2-5.6-1.6-10.6-4.1-15.1ZM193.3,79.3c-3.1,1.8-6.7,2.8-10.6,2.8s-7.4-.9-10.6-2.8c-3.1-1.8-5.6-4.4-7.5-7.6-1.8-3.2-2.8-6.9-2.8-10.9s.9-7.8,2.8-11c1.8-3.2,4.4-5.8,7.5-7.6,3.1-1.9,6.7-2.8,10.6-2.8s7.5.9,10.6,2.8c3.1,1.9,5.6,4.4,7.4,7.6,1.8,3.2,2.7,6.9,2.7,11s-.9,7.7-2.7,11c-1.8,3.2-4.3,5.8-7.4,7.6Z"/>
-          <path d="M269.9,32.1c-4.1-2.2-8.8-3.3-14-3.3s0,0,0,0,0,0,0,0c-5.2,0-9.9,1.1-14,3.3-4.1,2.2-7.4,5.4-9.8,9.6-2.4,4.2-3.6,9.3-3.6,15.3v27.8c0,1.4.5,2.6,1.4,3.5,1,1,2.1,1.4,3.5,1.4s2.7-.5,3.6-1.4c1-1,1.4-2.1,1.4-3.5v-27.8c0-4.2.8-7.8,2.4-10.5,1.6-2.7,3.8-4.7,6.5-6.1,2.5-1.2,5.4-1.9,8.6-2,3.1.1,6.1.7,8.6,2,2.7,1.3,4.9,3.4,6.5,6.1,1.6,2.7,2.4,6.2,2.4,10.5v27.8c0,1.4.5,2.6,1.4,3.5,1,1,2.2,1.4,3.6,1.4s2.6-.5,3.5-1.4c1-1,1.4-2.1,1.4-3.5v-27.8c0-6-1.2-11.1-3.6-15.3-2.4-4.2-5.7-7.4-9.8-9.6Z"/>
-          <path d="M324.8,80.8h-2.9c-3.1,0-5.6-1-7.6-3.2-2-2.1-3-4.9-3-8.3v-27.7h11.2c1.3,0,2.4-.4,3.3-1.3.9-.9,1.3-1.9,1.3-3.2s-.5-2.4-1.4-3.3c-.9-.8-2-1.3-3.3-1.3h-11.2v-15.7c0-1.5-.5-2.7-1.4-3.6s-2.2-1.4-3.6-1.4-2.7.5-3.6,1.5c-.9,1-1.4,2.2-1.4,3.6v15.7h-6c-1.3,0-2.4.4-3.3,1.3-.9.9-1.4,2-1.4,3.3s.5,2.3,1.4,3.2c.9.8,2,1.3,3.3,1.3h6v27.7c0,4.1.9,7.9,2.7,11.1,1.8,3.2,4.3,5.8,7.3,7.7,3.1,1.9,6.7,2.8,10.6,2.8h2.2c1.5,0,2.8-.5,3.8-1.3,1.1-.9,1.6-2.2,1.6-3.6s-.4-2.6-1.3-3.6c-.9-1-2-1.5-3.5-1.5Z"/>
-          <path d="M393.4,30.5c-1.5,0-2.7.5-3.6,1.4s-1.4,2.1-1.4,3.5v27.8c0,4.2-.8,7.8-2.4,10.5-1.6,2.7-3.8,4.7-6.5,6.1-2.5,1.2-5.4,1.9-8.6,2-3.1-.1-6.1-.7-8.6-2-2.7-1.3-4.9-3.4-6.5-6.1-1.6-2.7-2.4-6.2-2.4-10.5v-27.8c0-1.4-.5-2.6-1.4-3.5s-2.2-1.4-3.6-1.4-2.6.5-3.5,1.4c-1,1-1.4,2.1-1.4,3.5v27.8c0,6,1.2,11.1,3.6,15.3,2.4,4.2,5.7,7.4,9.8,9.6,4.1,2.2,8.8,3.3,14,3.3s0,0,0,0,0,0,0,0c5.2,0,9.9-1.1,14-3.3,4.1-2.2,7.4-5.4,9.8-9.6,2.4-4.2,3.6-9.3,3.6-15.3v-27.8c0-1.4-.5-2.6-1.4-3.5-1-1-2.1-1.4-3.5-1.4Z"/>
-          <path d="M495.7,41.8c-1.9-3.8-4.6-6.7-7.9-8.8-3.4-2.1-7.3-3.1-11.7-3.1s-.9,0-1.3,0c-.4,0-.8,0-1.2,0-4.4,0-8.3,1.1-11.7,3.1-2.3,1.4-4.1,3.2-5.7,5.4-1.6-2.2-3.5-4-5.7-5.4-3.4-2.1-7.3-3.1-11.7-3.1s-.8,0-1.2,0c-.4,0-.9,0-1.3,0-4.4,0-8.3,1.1-11.7,3.1-3.4,2.1-6,5-7.9,8.8-1.9,3.7-2.8,8.2-2.8,13.2v30.8c0,1.5.5,2.7,1.4,3.6.9.9,2.1,1.4,3.6,1.4s2.7-.5,3.6-1.4c1-.9,1.5-2.1,1.5-3.6v-30.8c0-4.8,1.3-8.7,3.7-11.4.1-.1.3-.2.4-.4,2.6-2.4,5.7-3.7,9.5-3.7,4,0,7.2,1.4,9.8,4.1.8.8,1.4,1.7,1.9,2.7,1.2,2.4,1.9,5.3,1.9,8.7v30.8c0,1,.3,1.9.8,2.6.2.3.3.7.6.9.9.9,2.1,1.4,3.6,1.4s0,0,0,0,0,0,0,0c1.5,0,2.7-.5,3.6-1.4.3-.3.4-.6.6-1,.5-.8.8-1.6.8-2.6v-30.8c0-3.4.7-6.3,1.9-8.6.5-1,1.2-1.9,2-2.8,2.6-2.7,5.8-4,9.8-4.1,3.8,0,7,1.3,9.5,3.7.1.1.3.2.4.4,2.5,2.8,3.7,6.6,3.7,11.4v30.8c0,1.5.5,2.7,1.5,3.6.9.9,2.2,1.4,3.6,1.4s2.7-.5,3.6-1.4c.9-.9,1.4-2.1,1.4-3.6v-30.8c0-5-.9-9.5-2.8-13.2Z"/>
-        </g>
-      </svg>
-    </footer>
 
   </div>
 
