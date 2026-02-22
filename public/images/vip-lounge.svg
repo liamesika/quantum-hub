@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="600" viewBox="0 0 1200 600">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0D0B16"/>
+      <stop offset="50%" stop-color="#1A0E24"/>
+      <stop offset="100%" stop-color="#0A0A12"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="50%" r="45%">
+      <stop offset="0%" stop-color="#D82B72" stop-opacity="0.07"/>
+      <stop offset="100%" stop-color="#D82B72" stop-opacity="0"/>
+    </radialGradient>
+    <!-- Diamond pattern -->
+    <pattern id="diamonds" x="0" y="0" width="80" height="80" patternUnits="userSpaceOnUse">
+      <path d="M40 0 L80 40 L40 80 L0 40 Z" fill="none" stroke="#D82B72" stroke-opacity="0.05" stroke-width="0.8"/>
+      <path d="M40 10 L70 40 L40 70 L10 40 Z" fill="none" stroke="#D82B72" stroke-opacity="0.03" stroke-width="0.5"/>
+    </pattern>
+  </defs>
+  <!-- Background -->
+  <rect width="1200" height="600" fill="url(#bg)"/>
+  <!-- Diamond pattern overlay -->
+  <rect width="1200" height="600" fill="url(#diamonds)"/>
+  <!-- Radial glow -->
+  <rect width="1200" height="600" fill="url(#glow)"/>
+  <!-- Larger accent diamonds -->
+  <path d="M600 200 L700 300 L600 400 L500 300 Z" fill="none" stroke="#D82B72" stroke-opacity="0.06" stroke-width="1"/>
+  <path d="M600 240 L660 300 L600 360 L540 300 Z" fill="none" stroke="#D82B72" stroke-opacity="0.08" stroke-width="0.8"/>
+  <path d="M600 270 L630 300 L600 330 L570 300 Z" fill="none" stroke="#D82B72" stroke-opacity="0.1" stroke-width="0.6"/>
+  <!-- Subtle sparkle points -->
+  <circle cx="600" cy="300" r="1.5" fill="#D82B72" opacity="0.15"/>
+  <circle cx="280" cy="150" r="1" fill="#D82B72" opacity="0.1"/>
+  <circle cx="920" cy="150" r="1" fill="#D82B72" opacity="0.08"/>
+  <circle cx="200" cy="400" r="1" fill="#D82B72" opacity="0.08"/>
+  <circle cx="1000" cy="420" r="1" fill="#D82B72" opacity="0.1"/>
+  <circle cx="440" cy="100" r="1" fill="#D82B72" opacity="0.06"/>
+  <circle cx="760" cy="500" r="1" fill="#D82B72" opacity="0.06"/>
+  <!-- Decorative lines radiating from center diamond -->
+  <line x1="500" y1="300" x2="200" y2="300" stroke="#D82B72" stroke-opacity="0.03" stroke-width="0.5"/>
+  <line x1="700" y1="300" x2="1000" y2="300" stroke="#D82B72" stroke-opacity="0.03" stroke-width="0.5"/>
+  <line x1="600" y1="200" x2="600" y2="50" stroke="#D82B72" stroke-opacity="0.03" stroke-width="0.5"/>
+  <line x1="600" y1="400" x2="600" y2="550" stroke="#D82B72" stroke-opacity="0.03" stroke-width="0.5"/>
+</svg>

@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="600" viewBox="0 0 1200 600">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0A0A12"/>
+      <stop offset="40%" stop-color="#1A0E24"/>
+      <stop offset="100%" stop-color="#0D0B16"/>
+    </linearGradient>
+    <radialGradient id="glow1" cx="30%" cy="40%" r="40%">
+      <stop offset="0%" stop-color="#D82B72" stop-opacity="0.06"/>
+      <stop offset="100%" stop-color="#D82B72" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glow2" cx="70%" cy="60%" r="35%">
+      <stop offset="0%" stop-color="#D82B72" stop-opacity="0.05"/>
+      <stop offset="100%" stop-color="#D82B72" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <!-- Background -->
+  <rect width="1200" height="600" fill="url(#bg)"/>
+  <!-- Radial glows -->
+  <rect width="1200" height="600" fill="url(#glow1)"/>
+  <rect width="1200" height="600" fill="url(#glow2)"/>
+  <!-- Circuit nodes -->
+  <circle cx="180" cy="120" r="4" fill="none" stroke="#D82B72" stroke-opacity="0.12" stroke-width="1.5"/>
+  <circle cx="350" cy="200" r="5" fill="none" stroke="#D82B72" stroke-opacity="0.15" stroke-width="1.5"/>
+  <circle cx="520" cy="140" r="4" fill="none" stroke="#D82B72" stroke-opacity="0.1" stroke-width="1.5"/>
+  <circle cx="700" cy="280" r="6" fill="none" stroke="#D82B72" stroke-opacity="0.12" stroke-width="1.5"/>
+  <circle cx="880" cy="180" r="4" fill="none" stroke="#D82B72" stroke-opacity="0.1" stroke-width="1.5"/>
+  <circle cx="1020" cy="320" r="5" fill="none" stroke="#D82B72" stroke-opacity="0.12" stroke-width="1.5"/>
+  <circle cx="250" cy="380" r="5" fill="none" stroke="#D82B72" stroke-opacity="0.1" stroke-width="1.5"/>
+  <circle cx="450" cy="420" r="4" fill="none" stroke="#D82B72" stroke-opacity="0.12" stroke-width="1.5"/>
+  <circle cx="650" cy="460" r="5" fill="none" stroke="#D82B72" stroke-opacity="0.1" stroke-width="1.5"/>
+  <circle cx="850" cy="400" r="4" fill="none" stroke="#D82B72" stroke-opacity="0.12" stroke-width="1.5"/>
+  <!-- Node inner dots -->
+  <circle cx="350" cy="200" r="2" fill="#D82B72" opacity="0.15"/>
+  <circle cx="700" cy="280" r="2.5" fill="#D82B72" opacity="0.12"/>
+  <circle cx="1020" cy="320" r="2" fill="#D82B72" opacity="0.12"/>
+  <circle cx="250" cy="380" r="2" fill="#D82B72" opacity="0.1"/>
+  <!-- Connection lines between nodes -->
+  <line x1="180" y1="120" x2="350" y2="200" stroke="#D82B72" stroke-opacity="0.06" stroke-width="1"/>
+  <line x1="350" y1="200" x2="520" y2="140" stroke="#D82B72" stroke-opacity="0.06" stroke-width="1"/>
+  <line x1="520" y1="140" x2="700" y2="280" stroke="#D82B72" stroke-opacity="0.05" stroke-width="1"/>
+  <line x1="700" y1="280" x2="880" y2="180" stroke="#D82B72" stroke-opacity="0.06" stroke-width="1"/>
+  <line x1="880" y1="180" x2="1020" y2="320" stroke="#D82B72" stroke-opacity="0.05" stroke-width="1"/>
+  <line x1="350" y1="200" x2="250" y2="380" stroke="#D82B72" stroke-opacity="0.04" stroke-width="1"/>
+  <line x1="250" y1="380" x2="450" y2="420" stroke="#D82B72" stroke-opacity="0.06" stroke-width="1"/>
+  <line x1="450" y1="420" x2="650" y2="460" stroke="#D82B72" stroke-opacity="0.05" stroke-width="1"/>
+  <line x1="650" y1="460" x2="850" y2="400" stroke="#D82B72" stroke-opacity="0.06" stroke-width="1"/>
+  <line x1="850" y1="400" x2="1020" y2="320" stroke="#D82B72" stroke-opacity="0.05" stroke-width="1"/>
+  <line x1="700" y1="280" x2="650" y2="460" stroke="#D82B72" stroke-opacity="0.04" stroke-width="1"/>
+  <line x1="520" y1="140" x2="450" y2="420" stroke="#D82B72" stroke-opacity="0.03" stroke-width="1"/>
+  <!-- Branching stubs from nodes -->
+  <line x1="180" y1="120" x2="140" y2="80" stroke="#D82B72" stroke-opacity="0.04" stroke-width="1"/>
+  <line x1="180" y1="120" x2="130" y2="150" stroke="#D82B72" stroke-opacity="0.04" stroke-width="1"/>
+  <line x1="880" y1="180" x2="940" y2="120" stroke="#D82B72" stroke-opacity="0.04" stroke-width="1"/>
+  <line x1="650" y1="460" x2="620" y2="530" stroke="#D82B72" stroke-opacity="0.04" stroke-width="1"/>
+  <line x1="250" y1="380" x2="190" y2="440" stroke="#D82B72" stroke-opacity="0.04" stroke-width="1"/>
+</svg>

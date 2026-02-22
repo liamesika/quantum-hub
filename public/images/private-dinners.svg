@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="600" viewBox="0 0 1200 600">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0A0A12"/>
+      <stop offset="50%" stop-color="#1A0E24"/>
+      <stop offset="100%" stop-color="#120B18"/>
+    </linearGradient>
+    <!-- Warm candlelight glow - center -->
+    <radialGradient id="candle1" cx="50%" cy="55%" r="30%">
+      <stop offset="0%" stop-color="#D82B72" stop-opacity="0.08"/>
+      <stop offset="40%" stop-color="#D82B72" stop-opacity="0.04"/>
+      <stop offset="100%" stop-color="#D82B72" stop-opacity="0"/>
+    </radialGradient>
+    <!-- Secondary warm glow - left -->
+    <radialGradient id="candle2" cx="25%" cy="50%" r="20%">
+      <stop offset="0%" stop-color="#D82B72" stop-opacity="0.05"/>
+      <stop offset="100%" stop-color="#D82B72" stop-opacity="0"/>
+    </radialGradient>
+    <!-- Secondary warm glow - right -->
+    <radialGradient id="candle3" cx="75%" cy="50%" r="20%">
+      <stop offset="0%" stop-color="#D82B72" stop-opacity="0.05"/>
+      <stop offset="100%" stop-color="#D82B72" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <!-- Background -->
+  <rect width="1200" height="600" fill="url(#bg)"/>
+  <!-- Warm candlelight glows -->
+  <rect width="1200" height="600" fill="url(#candle1)"/>
+  <rect width="1200" height="600" fill="url(#candle2)"/>
+  <rect width="1200" height="600" fill="url(#candle3)"/>
+  <!-- Center candle flame shape -->
+  <ellipse cx="600" cy="280" rx="6" ry="16" fill="#D82B72" opacity="0.12"/>
+  <ellipse cx="600" cy="276" rx="3" ry="10" fill="#D82B72" opacity="0.08"/>
+  <!-- Center candle body hint -->
+  <rect x="596" y="296" width="8" height="30" rx="2" fill="#D82B72" opacity="0.06"/>
+  <!-- Left candle flame -->
+  <ellipse cx="300" cy="290" rx="4" ry="12" fill="#D82B72" opacity="0.08"/>
+  <ellipse cx="300" cy="287" rx="2" ry="7" fill="#D82B72" opacity="0.06"/>
+  <rect x="297" y="302" width="6" height="24" rx="1.5" fill="#D82B72" opacity="0.04"/>
+  <!-- Right candle flame -->
+  <ellipse cx="900" cy="290" rx="4" ry="12" fill="#D82B72" opacity="0.08"/>
+  <ellipse cx="900" cy="287" rx="2" ry="7" fill="#D82B72" opacity="0.06"/>
+  <rect x="897" y="302" width="6" height="24" rx="1.5" fill="#D82B72" opacity="0.04"/>
+  <!-- Subtle table line -->
+  <line x1="150" y1="380" x2="1050" y2="380" stroke="#D82B72" stroke-opacity="0.05" stroke-width="1"/>
+  <!-- Light reflection on table -->
+  <ellipse cx="600" cy="380" rx="120" ry="3" fill="#D82B72" opacity="0.04"/>
+  <ellipse cx="300" cy="380" rx="60" ry="2" fill="#D82B72" opacity="0.03"/>
+  <ellipse cx="900" cy="380" rx="60" ry="2" fill="#D82B72" opacity="0.03"/>
+  <!-- Tiny ambient sparkles (bokeh feel) -->
+  <circle cx="180" cy="160" r="1.5" fill="#D82B72" opacity="0.06"/>
+  <circle cx="420" cy="120" r="1" fill="#D82B72" opacity="0.05"/>
+  <circle cx="780" cy="140" r="1.2" fill="#D82B72" opacity="0.06"/>
+  <circle cx="1020" cy="200" r="1" fill="#D82B72" opacity="0.05"/>
+  <circle cx="100" cy="350" r="1" fill="#D82B72" opacity="0.04"/>
+  <circle cx="1100" cy="380" r="1.2" fill="#D82B72" opacity="0.04"/>
+  <circle cx="500" cy="480" r="1" fill="#D82B72" opacity="0.04"/>
+  <circle cx="700" cy="500" r="1.3" fill="#D82B72" opacity="0.05"/>
+  <circle cx="350" cy="450" r="0.8" fill="#D82B72" opacity="0.04"/>
+  <circle cx="850" cy="470" r="0.8" fill="#D82B72" opacity="0.04"/>
+</svg>
