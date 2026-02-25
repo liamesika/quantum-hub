@@ -1,6 +1,5 @@
 "use client";
 
-import Image from "next/image";
 import { heroContent } from "@/config/content";
 import { ButtonPrimary } from "@/components/ButtonPrimary";
 import { AnimateIn } from "@/components/AnimateIn";
@@ -9,17 +8,17 @@ export function HeroSection() {
   return (
     <section className="relative overflow-hidden pt-24 pb-10 sm:pt-32 sm:pb-14">
 
-      {/* Watermark logo */}
-      <div className="pointer-events-none absolute top-20 right-[-80px] opacity-[0.03] sm:right-0">
-        <Image
-          src="/logos/quantum.png"
-          alt=""
-          width={600}
-          height={300}
-          className="h-auto w-[400px] sm:w-[600px]"
-          aria-hidden="true"
-        />
-      </div>
+      {/* Background image — mobile portrait / desktop landscape */}
+      <div
+        className="absolute inset-0 bg-cover bg-center sm:hidden"
+        style={{ backgroundImage: "url(/images/hero-bg-mobile.jpg)" }}
+      />
+      <div
+        className="absolute inset-0 hidden bg-cover bg-center sm:block"
+        style={{ backgroundImage: "url(/images/hero-bg.jpg)" }}
+      />
+      <div className="absolute inset-0 bg-black/65" />
+      <div className="absolute inset-0 bg-quantum-pink/[0.06]" />
 
       <div className="section-container relative text-center">
         <AnimateIn>

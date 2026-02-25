@@ -14,7 +14,7 @@ export function ExperiencesSection() {
           Explore what we have planned at 17-18.3
         </p>
 
-        <div className="mt-12 overflow-hidden">
+        <div className="mt-12 -mx-[calc((100vw-100%)/2)] overflow-hidden">
           {experienceCards.map((card, i) => (
             <AnimateIn key={card.href} delay={i * 100}>
               <Link
@@ -33,7 +33,7 @@ export function ExperiencesSection() {
                 {/* Dark gradient for text readability */}
                 <div className="absolute inset-0 bg-black/50" />
 
-                <div className="relative px-10 py-16 sm:px-14 sm:py-20 text-center">
+                <div className="relative px-10 py-16 sm:px-14 sm:py-24 text-center">
                   <h3 className="text-2xl font-bold tracking-wide text-white sm:text-3xl">
                     {card.title}
                   </h3>
