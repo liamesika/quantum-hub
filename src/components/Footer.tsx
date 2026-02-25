@@ -77,12 +77,19 @@ export function Footer() {
         <div className="mt-12 border-t border-white/[0.06] pt-6 text-center text-xs text-text-dim">
           <p>&copy; {new Date().getFullYear()} Quantum Hub. All rights reserved.</p>
           <a
-            href="https://liamesika.com"
+            href="https://liamesika.co.il"
             target="_blank"
             rel="noopener noreferrer"
-            className="mt-2 inline-block text-text-dim transition-colors hover:text-quantum-pink"
+            className="mt-4 inline-flex items-center gap-2 text-sm text-text-secondary transition-colors hover:text-quantum-pink"
           >
-            built by lia mesika (click for more info)
+            built by
+            <Image
+              src="/logos/lmelevix.png"
+              alt="LMElevix"
+              width={100}
+              height={30}
+              className="h-5 w-auto"
+            />
           </a>
         </div>
       </div>

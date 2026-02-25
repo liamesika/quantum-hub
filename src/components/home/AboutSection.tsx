@@ -20,7 +20,7 @@ export function AboutSection() {
         <AnimateIn delay={250}>
           <div className="mx-auto mt-12 max-w-4xl overflow-hidden rounded-2xl border border-white/[0.06]">
             <Image
-              src="/images/hero-bg.jpg"
+              src="/images/quantum-playground.jpg"
               alt="Quantum Playground — End-to-end value chain"
               width={1200}
               height={600}

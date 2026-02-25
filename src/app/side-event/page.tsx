@@ -77,7 +77,7 @@ export default function SideEventPage() {
 
           {/* Date/Time/Venue block */}
           <AnimateIn delay={100}>
-            <div className="mx-auto mt-10 inline-flex flex-col items-center gap-4 rounded-2xl border border-surface-border bg-white/[0.02] p-8">
+            <div className="mx-auto mt-10 inline-flex flex-col items-start gap-4 rounded-2xl border border-surface-border bg-white/[0.02] p-8">
               <div className="flex items-center gap-4">
                 <div className="flex h-14 w-14 flex-col items-center justify-center rounded-xl bg-quantum-pink/10 border border-quantum-pink/20">
                   <span className="text-[10px] font-bold uppercase text-quantum-pink">
@@ -85,7 +85,7 @@ export default function SideEventPage() {
                   </span>
                   <span className="text-xl font-bold text-text-primary">17</span>
                 </div>
-                <div className="text-center">
+                <div className="text-left">
                   <div className="text-lg font-semibold text-text-primary">
                     {sideEventContent.date}
                   </div>
@@ -107,7 +107,7 @@ export default function SideEventPage() {
                     <circle cx="12" cy="10" r="3" />
                   </svg>
                 </div>
-                <div className="text-center">
+                <div className="text-left">
                   <div className="font-semibold text-text-primary">
                     Peres Center for Peace and Innovation
                   </div>
@@ -116,26 +116,19 @@ export default function SideEventPage() {
               </div>
             </div>
           </AnimateIn>
-        </div>
-      </section>
 
-      {/* Agenda */}
-      <AgendaSection />
-
-      {/* CTA Section */}
-      <section className="py-14 sm:py-20">
-        <div className="section-container text-center">
-          <AnimateIn>
-            <h2 className="text-3xl font-extrabold tracking-[0.04em] uppercase sm:text-4xl">
+          {/* Join Us CTA */}
+          <AnimateIn delay={200}>
+            <h2 className="mt-14 text-3xl font-extrabold tracking-[0.04em] uppercase sm:text-4xl">
               Join Us
             </h2>
           </AnimateIn>
-          <AnimateIn delay={100}>
+          <AnimateIn delay={300}>
             <p className="mx-auto mt-4 max-w-lg text-text-secondary">
               Secure your spot at this exclusive side event. Space is limited.
             </p>
           </AnimateIn>
-          <AnimateIn delay={200}>
+          <AnimateIn delay={400}>
             <div className="mt-8 flex flex-wrap items-center justify-center gap-4">
               <ButtonPrimary href={siteConfig.lumaRsvp} external>
                 RSVP on Luma
@@ -145,6 +138,9 @@ export default function SideEventPage() {
           </AnimateIn>
         </div>
       </section>
+
+      {/* Agenda */}
+      <AgendaSection />
 
       <GoogleMap query="מרכז פרס לשלום ולחדשנות תל אביב" heading="Location" />
 
