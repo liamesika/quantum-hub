@@ -72,7 +72,7 @@ export default function VipLoungePage() {
         </div>
       </section>
 
-      <GoogleMap query="אקספו תל אביב" heading="Location" />
+      <GoogleMap query="שדרות רוקח 97, תל אביב-יפו" heading="Location" />
     </>
   );
 }
